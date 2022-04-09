@@ -7,7 +7,6 @@ export class Header extends React.Component{
 
     render(){
         return(
-            <Container className="headerColor position-sticky top-0 z-index">
                 <Container className="navbar navbar-dark navbar-expand-sm d-flex">
                     <Container className="position-sticky">
                         <a href="#" className="navbar-brand btn">BouTTouit</a>
@@ -32,7 +31,6 @@ export class Header extends React.Component{
                         </div>
                     </Container>
                 </Container>
-            </Container>
         );
     }
 }
