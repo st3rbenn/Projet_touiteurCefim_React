@@ -10,4 +10,4 @@
 ___
 Alors que ce projet est en cours de développement, je vous invite à me contacter pour toute question ou suggestion.
 ### Contact
-#### Email : [ anthonincolaspro@gmail.com ]
+#### Email : anthonincolaspro@gmail.com
