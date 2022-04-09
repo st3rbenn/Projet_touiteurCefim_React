@@ -7,9 +7,10 @@ export class Header extends React.Component{
 
     render(){
         return(
+            <header className="headerColor position-sticky top-0 z-index">
                 <Container className="navbar navbar-dark navbar-expand-sm d-flex">
                     <Container className="position-sticky">
-                        <a href="#" className="navbar-brand btn">BouTTouit</a>
+                        <a href="/" className="navbar-brand btn">BouTTouit</a>
                         <Button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon">
 
@@ -31,6 +32,7 @@ export class Header extends React.Component{
                         </div>
                     </Container>
                 </Container>
+            </header>
         );
     }
 }
