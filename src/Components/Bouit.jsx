@@ -13,7 +13,6 @@ export default function Bouit() {
             try{
                 setIsLoading(true);
                 const { data } = await axios.get('https://touiteur.cefim-formation.org/list');
-                console.log(data.messages);
                 setBouits(data.messages);
             }catch (e) {
                 setIsError(e);
