@@ -1,0 +1,118 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+}
+
+.hero {
+  margin-top: 15px;
+}
+.z-index {
+  z-index: 1051;
+}
+
+.pointer {
+  transition: all 0.2s ease;
+}
+
+.pointer:hover {
+  box-shadow: 5px 6px 6px 2px var(--light);
+  transform: scale(1.1);
+}
+
+.bgColor {
+  background: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2) !important;
+  backdrop-filter: blur(6.5px) !important;
+  -webkit-backdrop-filter: blur(6.5px) !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  padding: 0.5rem !important;
+  resize: none !important;
+}
+.bgModal {
+  background: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5) !important;
+  backdrop-filter: blur(6.5px) !important;
+  -webkit-backdrop-filter: blur(6.5px) !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+.bg-influences {
+  background: rgba(129, 7, 153, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.5rem;
+}
+
+.img {
+  width: 20px;
+  height: 20px;
+}
+
+.overflow {
+  overflow-wrap: anywhere;
+}
+
+.bg-Button {
+  backdrop-filter: blur(2px) saturate(79%);
+  -webkit-backdrop-filter: blur(2px) saturate(79%);
+  background-color: rgba(255, 255, 255, 0.21);
+  border: none;
+  padding: 10px;
+}
+
+.bg-ButtonClicked {
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  background-color: rgba(255, 8, 8, 0.31);
+  border-radius: 12px;
+}
+
+.bg-ButtonSignUp {
+  backdrop-filter: blur(0px) saturate(200%);
+  -webkit-backdrop-filter: blur(0px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  transition: 0.2s ease-in-out;
+}
+
+.bg-ButtonSignUp:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.bg-ButtonSignUp:hover::after {
+  opacity: 1;
+}
+
+.sectionColor {
+  background: rgba(66, 52, 96, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.relative {
+  position: relative;
+}
+
+.absoluteLike {
+  position: absolute;
+  top: 80px;
+  right: -57px;
+}
+
+.absoluteComment {
+  position: absolute;
+  top: 20px;
+  right: -57px;
+}
