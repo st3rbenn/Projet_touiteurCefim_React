@@ -13,8 +13,10 @@ export default function Tendance() {
             try{
                 setIsLoading(true)
                 const { data } = await axios.get('https://touiteur.cefim-formation.org/trending')
-                console.log(data)
-                setTendances(data)
+                //je veut push dans le tableau dataArray les données de l'api
+                data.forEach(element => {
+                    data.push(element)
+                });
             }catch (e) {
                 setIsError(e)
             }finally {
@@ -32,5 +34,12 @@ export default function Tendance() {
     }
 
 
+    console.log(Tendances)
+
+
 }
 
+/*.sort(({word: previousNb}, {word: currentNb}) => previousNb - currentNb)
+    .map(({word, Nb}) =>
+        <span key={Nb} className="rounded-pill text-white p-2 pointer m-1 bgColor">{word}</span>
+    )*/
