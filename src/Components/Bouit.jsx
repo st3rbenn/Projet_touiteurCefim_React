@@ -1,38 +1,17 @@
 import React, {useEffect, useState} from 'react';
 
-import axios from 'axios';
 
 export default function Bouit() {
-
-    const [bouits, setBouits] = useState([], true);
-    const [isLoading, setIsLoading] = useState(true);
-    const [isError, setIsError] = useState(false);
+    const [bouits, setBouits] = useState([]);
 
     useEffect(() => {
-        (async () => {
-            try{
-                setIsLoading(true);
-                const { data } = await axios.get('https://touiteur.cefim-formation.org/list');
-                setBouits(data.messages);
-            }catch (e) {
-                setIsError(e);
-            }finally {
-                setIsLoading(false);
-            }
-        })();
+
+        fetch('https://touiteur.cefim-formation.org/list')
+            .then((data) => data.json())
+            .then((response) => {
+                setBouits(response.messages);
+            })
     }, []);
-
-    if(isError) {
-        return <div className="card text-white bgColor mb-3 overflow">
-            <h5 className="bgColor text-center">Une erreur est survenu</h5>
-        </div>
-    }
-
-    if(isLoading) {
-        return <div className="card text-white bgColor mb-3 overflow">
-                    <h5 className="bgColor text-center">Chargement</h5>
-                </div>
-    }
 
 
     return (
