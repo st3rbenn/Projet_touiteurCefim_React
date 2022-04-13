@@ -23,7 +23,7 @@ export default function Bouit() {
                     <form className="d-flex gap-2" id="likeCommentForm">
                         <input type="submit"
                                className="btn d-flex align-items-center gap-2 bg-Button pointer d-none"
-                               id="likeButton"/>
+                               id="likeButton" value={bouit.likes}/>
                         <input type="submit"
                                className="btn d-flex align-items-center gap-2 bg-Button pointer d-none"
                                id="commentButton"/>

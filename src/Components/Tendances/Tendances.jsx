@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 
-export default function Tendance() {
+export default function Tendances() {
 
     const [tendances, setTendances] = useState([]);
     useEffect(() => {
@@ -13,7 +13,6 @@ export default function Tendance() {
                     DataArray.push(key)
                 })
                 setTendances(DataArray.slice(0, 25))
-
             })
     }, []);
 

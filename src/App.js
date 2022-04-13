@@ -1,5 +1,5 @@
 import {Header} from './Layout/Header/Header';
-import {HeroPage} from "./Section/Hero_Section/Hero";
+import HeroPage from "./Section/Hero_Section/Hero";
 
 function App() {
     return (

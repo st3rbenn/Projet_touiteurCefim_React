@@ -1,8 +1,14 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
-export class FormForSendingBouit extends React.Component {
+export default function FormForSendingBouit(){
 
-    render(){
+
+    useEffect(() => {
+            fetch('https://touiteur.cefim-formation.org/',
+                )
+        })
+
+
         return(
             <form role="form">
                 <div className="mb-3 text-dark">
@@ -16,5 +22,4 @@ export class FormForSendingBouit extends React.Component {
                 <input type="submit" className="btn btn-light text-light rounded-pill bgColor fw-bolder p-md-2 pointer" value="Envoie ton Bouit"/>
             </form>
         );
-    }
 }
